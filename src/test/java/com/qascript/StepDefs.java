@@ -23,10 +23,9 @@ public class StepDefs {
         driver = new ChromeDriver();
         driver.get("https://www.selenium.dev/");
 
-
     }
 
-    @Then("Website is displayed to user")
+    @Then("Verify webpage is displayed to user")
     public void qascriptPageIsDisplayedToUser() {
 
         String strTitle = driver.getTitle();
@@ -41,7 +40,10 @@ public class StepDefs {
         caps.setCapability("os_version", "10");
         caps.setCapability("browser", "Chrome");
         caps.setCapability("browser_version", "80");
-        caps.setCapability("name", "qascript1's First Test");
+        caps.setCapability("build", "1.0");
+        caps.setCapability("browserstack.debug", "true");
+        caps.setCapability("project", "Selenium Tests");
+        caps.setCapability("name", "BS Test");
         try {
             WebDriver bs_driver = new RemoteWebDriver(new URL(URL), caps);
             bs_driver.get("https://www.selenium.dev/");

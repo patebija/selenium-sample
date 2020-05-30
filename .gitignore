@@ -1,4 +1,4 @@
 .idea
 results
 target
-Selenium-Demo.iml
+*.iml
