@@ -19,7 +19,7 @@ public class StepDefs {
 
     }
 
-    @Then("QAScript page is displayed to user")
+    @Then("Website is displayed to user")
     public void qascriptPageIsDisplayedToUser() {
 
         String strTitle = driver.getTitle();
