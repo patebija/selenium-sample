@@ -42,7 +42,7 @@ public class StepDefs {
         caps.setCapability("browser_version", "80");
         caps.setCapability("build", "1.0");
         caps.setCapability("browserstack.debug", "true");
-        caps.setCapability("project", "Selenium Tests");
+        caps.setCapability("project", "Browserstack Demo");
         caps.setCapability("name", "BS Test");
         try {
             WebDriver bs_driver = new RemoteWebDriver(new URL(URL), caps);
